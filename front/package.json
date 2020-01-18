@@ -1,0 +1,13 @@
+{
+  "name": "front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "check-frontend": "echo \"Checking FRONTEND only\" && exit 1",
+    "test": "echo \"Error: no frontend tests!\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
