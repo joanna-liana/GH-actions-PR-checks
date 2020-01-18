@@ -17,7 +17,7 @@ jobs:
         node-version: '12.x'
     - name: Check backend code
       run: |
-        cd front &&
+        cd back &&
         npm run check-backend &&
         npm test
       env:
