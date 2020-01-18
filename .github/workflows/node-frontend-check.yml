@@ -1,0 +1,25 @@
+name: Node check - frontend
+
+on: 
+  pull_request:
+    paths:
+      -  'front/**'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js 12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - name: Check frontend code
+      run: |
+        cd front &&
+        npm run check-frontend &&
+        npm test
+      env:
+        CI: true
